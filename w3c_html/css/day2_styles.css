@@ -1,0 +1,54 @@
+body
+{
+    background-color: coral;
+}
+
+h1{
+    color: black;
+    text-align: center; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 300%; 
+}
+
+p
+{
+    color:blueviolet;
+}
+
+pre
+{
+    color: crimson;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    border: 2px solid green;
+    padding: 40px;
+    margin : 50px;
+}
+
+a:link 
+{
+    background-color:  #f44336;
+    color:white;
+    padding: 5px 10px;
+    margin: 10px 20px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:visited
+{
+    background-color: aqua;
+    color: black;
+
+}
+
+a:hover 
+{
+    background-color: blueviolet;
+}
+a:active
+{
+    background-color: green;
+}
