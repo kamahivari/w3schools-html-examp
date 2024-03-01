@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body
+        {
+            background-color: cornsilk;
+        }
+
+        .mycontainer
+        {
+            width: 100%;
+            overflow: auto;
+            background-color:cadetblue;
+        }
+        .mycontainer div
+        {
+            width: 33%;
+            float: left;
+        }
+
+        div
+        {
+            width: 30%;
+            display: inline-block;
+        }
+
+        .grid-container
+        {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+
+
+        }
+
+        .city
+        {
+            color: blueviolet;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+
+        }
+        .city2 {
+        background-color: tomato;
+            color: white;
+            padding: 10px;
+    } 
+
+        .main {
+              text-align: center;
+                }
+
+
+                #myHeader {
+                 background-color: lightblue;
+                    color: black;
+                     padding: 40px;
+                    text-align: center;
+}
+    </style>
+</head>
+<body>
+
+    <h2 id="Giris" style="color: brown;">Giris</h2>
+
+<div class="mycontainer">
+      <div style="background-color: aqua;">
+        <h2>London</h2>
+        <p>London is the capital city of England.</p>
+        <p>London has over 13 million inhabitants.</p>
+      </div>
+      
+      <div style="background-color: blueviolet;">
+        <h2>Oslo</h2>
+        <p>Oslo is the capital city of Norway.</p>
+        <p>Oslo has over 600.000 inhabitants.</p>
+      </div>
+      
+      <div style="background-color: chartreuse;">
+        <h2>Rome</h2>
+        <p>Rome is the capital city of Italy.</p>
+        <p>Rome has almost 3 million inhabitants.</p>
+      </div>
+</div>  
+
+
+    <div style="background-color: aqua;">
+        <h2>London</h2>
+        <p>London is the capital city of England.</p>
+        <p>London has over 13 million inhabitants.</p>
+      </div>
+      
+      <div style="background-color: blueviolet;">
+        <h2>Oslo</h2>
+        <p>Oslo is the capital city of Norway.</p>
+        <p>Oslo has over 600.000 inhabitants.</p>
+      </div>
+      
+      <div style="background-color: chartreuse;">
+        <h2>Rome</h2>
+        <p>Rome is the capital city of Italy.</p>
+        <p>Rome has almost 3 million inhabitants.</p>
+
+        </div>  
+        
+        
+        <div class="grid-container">
+            <div style="background-color: aqua;">
+              <h2>London</h2>
+              <p>London is the capital city of England.</p>
+              <p>London has over 13 million inhabitants.</p>
+            </div>
+            
+            <div style="background-color: blueviolet;">
+              <h2>Oslo</h2>
+              <p>Oslo is the capital city of Norway.</p>
+              <p>Oslo has over 600.000 inhabitants.</p>
+            </div>
+            
+            <div style="background-color: chartreuse;">
+              <h2>Rome</h2>
+              <p>Rome is the capital city of Italy.</p>
+              <p>Rome has almost 3 million inhabitants.</p>
+            </div>
+      </div>  
+
+
+      <div class="city">
+        <h2>London</h2>
+        <p>London is the capital of England.</p>
+      </div>
+      
+      <div class="city">
+        <h2>Paris</h2>
+        <p>Paris is the capital of France.</p>
+      </div>
+      
+      <div class="city">
+        <h2>Tokyo</h2>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+
+
+      <h2 class="city2 main">London</h2>
+        <h2 class="city2">Paris</h2>
+        <h2 class="city2">Tokyo</h2>
+
+
+
+        <h2 class="city">Paris</h2>
+        <p class="city">Paris is the capital of France</p>
+
+        <script>
+            function myFunction()
+            {
+                var x = document.getElementByClassName("city");
+                for(var i=0; i<x.length;i++)
+                {
+                    x[i].style.display="none";
+                }
+            }
+
+        </script>
+
+
+    <h1 id="myHeader">My Header</h1>
+
+   
+        <a href="#Giris"> Sayfanın başına git</a><br>
+        <a href="day5_2.html#iframes">Iframes sayfası</a>
+
+    
+</body>
+</html>
