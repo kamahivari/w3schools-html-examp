@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+    charset="UTF-8" >
+    <meta name="author" content="Onur Doğan">
+    <meta name="description" content="6.Gün HTML çalisması">
+    <meta http-equiv="refresh" content="30">
+    <title>Document</title>
+
+    <style>
+        body
+        {
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+
+    <iframe src="day5.html"  title="w3schools iframe" style="width: 500px;height: 500px;border: none;"></iframe>
+    
+    <h2>Iframe - Target for a Link</h2>
+
+    <iframe src="day4.html" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+
+    <p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+
+    <p>When the target attribute of a link matches the name of an iframe, the link will open in the iframe.</p>
+
+
+    <hr style="border: 5px solid ;">
+
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Tarih</button>
+
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML="Hello JavaScript"
+        document.getElementById("demo").style.color="red";
+        document.getElementById("demo").style.fontSize="26px";
+        document.getElementById("demo").style.backgroundColor="blue";
+
+        function lighton_off(sw)
+        {
+            var pic;
+            if(sw==0)
+            {
+                pic="/img/pic_bulboff.gif"
+            }
+            else
+            {
+                pic="/img/pic_bulbon.gif"
+            }
+
+            document.getElementById("myimage").src=pic;
+        }
+    </script>
+    <noscript> Üzgünüz bu tarayıcı JavaScript komutlarını desteklemiyor</noscript>
+
+
+
+<h1>My First JavaScript</h1>
+<p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<img id="myimage" src="/img/pic_bulboff.gif" style="width: 100px;height: 180px;">
+<p>
+<button type="button" onclick="lighton_off(1)">Aç</button>
+<button type="button" onclick="lighton_off(0)">Kapa</button>
+</p>
+
+<a href="day6_1.html">yeni bölümden devam 'base'</a>
+
+</body>
+</html>

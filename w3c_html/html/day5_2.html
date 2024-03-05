@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+    </style>
+
+
 </head>
 <body>
     <h1 id="iframes">Chapter : IFrame , JScript ....</h1>
+
+    <h2 id="myHeader">GetElementById() JScript change context in HTML content with ID</h2>
+    <button onclick="displayResult()">H2 İçerik Değiştir</button>
+
+    <script>
+        function displayResult()
+        {
+            document.getElementById("myHeader").innerHTML="h2 Başlığının içeriği değiştirildi"
+        }
+
+    </script>
 </body>
 </html>
