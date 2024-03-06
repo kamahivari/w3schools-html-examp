@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body
+        {
+            background-color: blanchedalmond;
+        }
+
+        .all-browsers {
+         margin: 0;
+            padding:10px;
+                 background-color: lightgray;
+            }
+
+        .all-browsers > h1, .browser {
+         margin: 10px;
+            padding: 5px;
+}           
+
+        .browser {
+    background: white;
+        }
+
+        .browser > h2, p {
+         margin: 4px;
+        font-size: 90%;
+        }
+
+        aside {
+         width: 30%;
+         padding-left: 15px;
+         margin-left: 15px;
+        float: right;
+        font-style: italic;
+         background-color: lightgray;
+        }
+
+        #entities
+        {
+            background-color: cornsilk;
+            padding: 20px;
+            width: 50%;
+            float:none;
+        }
+
+        #symbolandemoji
+        {
+            background-color: blueviolet;
+            padding: 20px;
+            width: 50%;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <code>
+        x = 5;
+        y = 6;
+        z = x + y ; 
+    </code>
+
+    <p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+    <p>Message from my computer:</p>
+    <p><samp>File not found.<br>Press F1 to continue</samp></p>
+
+    <pre>
+        <code>
+            x = 6;
+            y = 7;
+            z = x + y; 
+
+        </code>
+
+    </pre>
+
+
+    <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
+
+    <section style="background-color: aqua;">
+        <h1>WWF</h1>
+        <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+    </section>
+        
+    <section style="background-color: blueviolet;">
+        <h1>WWF's Panda symbol</h1>
+        <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+    </section>
+
+    <article style="background-color: cadetblue;">
+        <h2>Google Chrome</h2>
+        <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+        </article>
+        
+    <article style="background-color: burlywood;">
+        <h2>Mozilla Firefox</h2>
+        <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+    </article>
+        
+    <article style="background-color: chocolate;">
+        <h2>Microsoft Edge</h2>
+        <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+    </article>
+    
+
+
+    <article class="all-browsers">
+        <h1>Most Popular Browsers</h1>
+        <article class="browser">
+          <h2>Google Chrome</h2>
+          <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+        </article>
+        <article class="browser">
+          <h2>Mozilla Firefox</h2>
+          <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+        </article>
+        <article class="browser">
+          <h2>Microsoft Edge</h2>
+          <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+        </article>
+      </article>
+
+
+      <article>
+        <header>
+          <h1>What Does WWF Do?</h1>
+          <p>WWF's mission:</p>
+        </header>
+        <p>WWF's mission is to stop the degradation of our planet's natural environment,
+        and build a future in which humans live in harmony with nature.</p>
+      </article>
+
+      <footer>
+        <p>Author: Hege Refsnes</p>
+        <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+      </footer>
+
+      <nav>
+        <a href="/html/">HTML</a> |
+        <a href="/css/">CSS</a> |
+        <a href="/js/">JavaScript</a> |
+        <a href="/jquery/">jQuery</a>
+      </nav>
+
+
+      <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+        <aside>
+        <h4>Epcot Center</h4>
+        <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+        </aside>
+
+        <hr>
+
+        <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+        <aside>
+        <p>The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+        </aside>
+
+        <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+        <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+
+        <hr>
+
+        <figure>
+            <img src="/img/img_food.jpg" alt="Trulli">
+            <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption>
+          </figure>
+
+
+          <!-- 
+            HTML Entitites 
+                1-Entities Name
+                2- Entites Number
+          -->
+
+          <div id="entities">
+            <p> 5 &lt 10</p>
+            <p> 10 &#60 15</p>
+
+          </div>
+
+          <p>My family and I visited The Epcot center this summer.  The weather was nice, and &#8209 Epcot was amazing! I had a great summer together with my family! a&#768 o&#771</p>
+    
+    
+          <div id="symbolandemoji">
+                <p>&#8721 &sum; &forall; &aacute; &AMP; &apos; &notin; &ni; &isin; &part; &prod;</p>
+                <p>Some Greeks Letter :  &Gamma;  &Alpha; &Epsilon; &Delta;</p>
+                <p>Some other entitites : &copy; &euro; &dollar; &reg; &hearts;</p>
+                <p>Emojis : &#128513 &#128507</p>
+                <p style="font-size: 40px;">Emojis : &#128516 &#128525 &#128151</p>
+          </div>
+    
+    
+    
+    
+        </body>
+
+</html>
