@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gün 8</title>
+    <style>
+        body
+        {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">FORM APP</h1>
+
+    <form>
+        <label for="fname">İsminizi Girin:</label><br>
+        <input type="text" id="fname" name="name"><br>
+        <label for="fsur">Soyisminizi Girin:</label> <br>
+        <input type="text" id="fsur" name="surname"> <br>
+        <label for="radio">Radio button için texte tıkla</label><br>
+        <input type="radio" name="tikla" id="radio">
+        <input type="radio" name="tikla" id="radio">
+    </form>
+
+
+    <hr>
+    
+    <form>
+        <input type="radio" id="html" name="fav-language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" name="fav-language" id="css" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" name="fav-language" id="JS" value="JavaScript">
+        <label for="JS">JavaScript</label>
+    </form>
+
+    <hr>
+
+    <form >
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label>
+      </form>
+
+      <hr>
+
+      <form action="day2.html" target="_blank" method="get" autocomplete="on" autocapitalize="on" novalidate>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" value="John"><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+
+
+      <!--
+        FORM elementleri
+        <select> 
+            <option> 
+                "selected" atttribute -- pre-selected settings
+       -->
+       <hr>
+       <form style="background-color: aqua;">
+           <label for="araba">Araba markası seç:</label> 
+           <select name="araba" id="araba" size="2" multiple>
+                <option value="bmw">BMW</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+                <option value="renault">Renault</option>
+                <option value="toyota" selected>Toyota</option>
+                <option value="ford">Ford</option>
+           </select> <br>
+           <br>
+           <textarea name="message" rows="10" cols="30">
+            The cat was playing in the garden.
+            </textarea>
+
+            <textarea name="message" style="width: 200px;height: 200px;">
+                The cat was playing in the garden.
+            </textarea>
+            <br>
+            <button type="button" onclick="alert('Hello World!')">Tıkla!</button>
+       </form>
+</body>
+</html>
