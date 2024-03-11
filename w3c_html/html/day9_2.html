@@ -11,12 +11,85 @@
     </style>
 </head>
 <body>
-    <form>
+    <form action="/html/day2_1.html" id="form1">
         <fieldset>
             <legend>HTML Input Form* Attribute</legend>
-            
+           
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <input type="submit" value="Submit">
+
 
         </fieldset>
     </form>
+
+    <label for="lname">Last name:</label>
+   <input type="text" id="lname" name="lname" form="form1">
+    <br><br>
+    
+   <form action="/html/day3.html">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit" value="Submit">
+    <input type="submit" formaction="/html/day9_2.html" value="Submit as Admin">
+  </form>
+
+  <br><br>
+  <hr>
+
+  <form action="/html/day9_1.html" method="post">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <input type="submit" value="Submit">
+    <input type="submit" formenctype="multipart/form-data"
+    value="Submit as Multipart/form-data">
+  </form>
+
+<br><br>
+<hr>
+
+  <form action="/html/day9_1.html" method="get">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit" value="Submit using GET">
+    <input type="submit" formmethod="post" value="Submit using POST">
+  </form>
+
+  <br><br>
+  <hr>
+
+  <form action="/html/day9_1.html">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit" value="Submit">
+    <input type="submit" formtarget="_blank" value="Submit to a new window/tab">
+  </form>
+
+  <br><br>  
+  <hr>
+
+  <form action="/html/day9_1.html">
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <input type="submit" value="Submit">
+    <input type="submit" formnovalidate="formnovalidate"
+    value="Submit without validation">
+  </form>
+
+  <br><br>
+  <hr>
+
+  <form action="/html/day4_1.html" novalidate>
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
 </body>
 </html>
