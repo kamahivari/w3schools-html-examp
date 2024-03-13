@@ -12,6 +12,80 @@
     </style>
 </head>
 <body>
-    
+    <canvas id="myCanvas" height="100" width="200" style="border: 1px solid #000000;"></canvas>
+    <canvas id="myCanvas2" height="100" width="200" style="border: 1px solid #000000;"></canvas>
+    <canvas id="myCanvas3" height="100" width="200" style="border: 1px solid #000000;"></canvas>
+    <br>
+    <canvas id="myCanvas4" height="100" width="200" style="border: 1px solid #000000;"></canvas>
+    <canvas id="myCanvas5" height="100" width="200" style="border: 1px solid #000000;"></canvas>
+    <canvas id="myCanvas6" height="100" width="200" style="border: 1px solid #000000;"></canvas>
+    <br><br>
+
+    <canvas id="canvasimage" height="500" width="500" style="border: 1px solid #000000;"></canvas>
+    <img id="araba" src="/img/img_car.jpg" alt="araba" width="200" height="100">
+    <p><button onclick="myCanvas()">Dene</button></p>
+
+   <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(0,0);
+        ctx.lineTo(200,100);
+        ctx.stroke(); 
+
+        var c1 = document.getElementById("myCanvas2");
+        var ctx1 = c1.getContext("2d");
+        ctx1.beginPath();
+        ctx1.arc(95,50,40,0,2*Math.PI);
+        ctx1.stroke();
+
+        var c2 = document.getElementById("myCanvas3");
+        var ctx2 = c2.getContext("2d");
+        ctx2.font = "30px Arial";
+        ctx2.fillText("Hello World!",20,60);
+
+
+        var c3 = document.getElementById("myCanvas4");
+        var ctx3 = c3.getContext("2d");
+        ctx3.font = "30px Arial";
+        ctx3.strokeText("Hello World!",30,50);
+        
+
+
+
+        var c4 = document.getElementById("myCanvas5");
+        var ctx4 = ctx4.getContext("2d");
+        //Create Gradient
+        var grd = ctx4.createLinearGradient(0,0,200,0);
+        grd.addColorStop(0,"red");
+        grd.addColorStop(1,"white");
+        //Fill with Gradient
+        ctx4.fillStyle = grd;
+        ctx4.fillRect(10,10,150,80);
+
+
+
+        var c5 = document.getElementById("myCanvas6");
+        var ctx5 = c.getContext("2d");
+
+            // Create gradient
+        var grd1 = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+        grd1.addColorStop(0, "red");
+        grd1.addColorStop(1, "white");
+
+        // Fill with gradient
+        ctx5.fillStyle = grd;
+        ctx5.fillRect(10, 10, 150, 80);
+
+        function myCanvas(){
+            var img = document.getElementById("canvasimage");
+            var imgx = img.getContext("2d");
+            var realimg = document.getElementById("araba");
+            imgx.drawImage(realimg,10,10);
+        }
+
+
+        </script>
+        <br><br>
+        <a href="day10_1.html">SVG Bölümünden Devam!!</a>
 </body>
 </html>
